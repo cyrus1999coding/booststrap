@@ -1,0 +1,6 @@
+@mixin pad($t, $r, $b, $l) {
+  padding: $t $r $b $l;
+}
+@mixin radius($tl, $tr, $br, $bl) {
+  border-radius: $tl $tr $br $bl;
+}

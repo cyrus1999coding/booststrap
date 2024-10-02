@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 500ms;
+}
+@import "./xs";
+@import "./def";
+@import "./general.scss";
+@import "./md";
+@import "./lg";
+@import "./xl";
+@import "./xxl";
+@import "./sm";
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: rgb(255, 238, 0);
+}
+.cyan {
+  background-color: rgb(9, 240, 240);
+}
+.darkblue {
+  background-color: rgb(8, 0, 114);
+}
+
+.black {
+  background-color: #2b2b2b;
+}
+
+// @for $i from 1 through 100 {
+//   @include heightPercent($i);
+// }
+@media only screen and (min-width: 340px) {
+  @for $i from 1 through 12 {
+    .col-xs-#{$i} {
+      width: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 to 12 {
+    .col-offset-xs-#{$i} {
+      margin-left: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 through 10 {
+    .row-vh-xs-#{$i} {
+      height: $i * 10vh;
+    }
+  }
+  @for $i from 1 through 100 {
+    .row-px-xs-#{$i} {
+      height: $i * 12.25px;
+    }
+  }
+  .row-xs {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .col-xs {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .row-rev-xs {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+
+  .col-rev-xs {
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+  @for $i from 1 through 100 {
+    .heightPercent-#{$i}-xs {
+      height: percentage($i / 100);
+    }
+  }
+}
+@media only screen and (min-width: 576px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 to 12 {
+    .col-offset-sm-#{$i} {
+      margin-left: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 through 10 {
+    .row-vh-sm-#{$i} {
+      height: $i * 10vh;
+    }
+  }
+  @for $i from 1 through 100 {
+    .row-px-sm-#{$i} {
+      height: $i * 12.25px;
+    }
+  }
+  @for $i from 1 through 100 {
+    .heightPercent-#{$i}-sm {
+      height: percentage($i / 100);
+    }
+  }
+  .row-sm {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .col-sm {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .row-rev-sm {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+
+  .col-rev-sm {
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+  //html start
+  // .row-sm {
+  //   display: flex;
+  //   flex-flow: row wrap;
+  // }
+  // .col-sm {
+  //   display: flex;
+  //   flex-flow: column wrap;
+  // }
+  // .sm-top {
+  //   background-color: red;
+  // }
+  // .col-sm {
+  //   .sm-top {
+  //     background-color: rgb(255, 238, 0);
+  //   }
+  //   .sm-middle {
+  //     background-color: rgb(9, 240, 240);
+  //   }
+  //   .sm-bot {
+  //     background-color: rgb(8, 0, 114);
+  //   }
+  // }
+  // .sm-bot {
+  //   background-color: #2b2b2b;
+  // }
+  //html end
+}
+@media only screen and (min-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 to 12 {
+    .col-offset-md-#{$i} {
+      margin-left: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 through 10 {
+    .row-vh-md-#{$i} {
+      height: $i * 10vh;
+    }
+  }
+  @for $i from 1 through 100 {
+    .row-px-md-#{$i} {
+      height: $i * 12.25px;
+    }
+  }
+  .row-md {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .col-md {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .row-rev-md {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+
+  .col-rev-md {
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+  @for $i from 1 through 100 {
+    .heightPercent-#{$i}-md {
+      height: percentage($i / 100);
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 to 12 {
+    .col-offset-lg-#{$i} {
+      margin-left: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 through 10 {
+    .row-vh-lg-#{$i} {
+      height: $i * 10vh;
+    }
+  }
+  @for $i from 1 through 100 {
+    .row-px-lg-#{$i} {
+      height: $i * 12.25px;
+    }
+  }
+  .row-lg {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .col-lg {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .row-rev-lg {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+
+  .col-rev-lg {
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+  @for $i from 1 through 100 {
+    .heightPercent-#{$i}-lg {
+      height: percentage($i / 100);
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      width: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 to 12 {
+    .col-offset-xl-#{$i} {
+      margin-left: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 through 10 {
+    .row-vh-xl-#{$i} {
+      height: $i * 10vh;
+    }
+  }
+  @for $i from 1 through 100 {
+    .row-px-xl-#{$i} {
+      height: $i * 12.25px;
+    }
+  }
+
+  .row-xl {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .column-xl {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .row-rev-xl {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+
+  .col-rev-xl {
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+  @for $i from 1 through 100 {
+    .heightPercent-#{$i}-xl {
+      height: percentage($i / 100);
+    }
+  }
+}
+@media only screen and (min-width: 1400px) {
+  @for $i from 1 through 12 {
+    .col-xxl-#{$i} {
+      width: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 to 12 {
+    .col-offset-xxl-#{$i} {
+      margin-left: $i * 8.333333%;
+    }
+  }
+  @for $i from 1 through 10 {
+    .row-vh-xxl-#{$i} {
+      height: $i * 10vh;
+    }
+  }
+  @for $i from 1 through 100 {
+    .row-px-xxl-#{$i} {
+      height: $i * 12.25px;
+    }
+  }
+  @for $i from 1 through 100 {
+    .heightPercent-xxl-#{$i} {
+      height: $i * (1/100);
+    }
+  }
+  .row-xxl {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .col-xxl {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .row-rev-xxl {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+
+  .col-rev-xxl {
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+  @for $i from 1 through 100 {
+    .heightPercent-#{$i}-xxl {
+      height: percentage($i / 100);
+    }
+  }
+}

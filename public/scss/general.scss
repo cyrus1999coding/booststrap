@@ -1,0 +1,22 @@
+// @for $i from 1 through 100 {
+//   .heightPercent-#{$i}-sm {
+//     height: percentage($i / 100);
+//   }
+// }
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: rgb(255, 238, 0);
+}
+.cyan {
+  background-color: rgb(9, 240, 240);
+}
+.darkblue {
+  background-color: rgb(8, 0, 114);
+}
+
+.black {
+  background-color: #2b2b2b;
+}
